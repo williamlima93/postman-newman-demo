@@ -25,7 +25,7 @@ jobs:
           cache: 'npm'
 
       - name: Installation of related packages
-        run: npm ci
+        run: npm ci --force
 
       - name: RUN SuperTest API Testing
         run: npm test
