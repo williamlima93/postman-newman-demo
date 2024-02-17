@@ -1,0 +1,16 @@
+{
+  "name": "postman-newman-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "newman run testcase/demo.postman_collection.json -e env/DemoEnv.postman_environment.json -r cli,htmlextra --reporter-htmlextra-report .report/postman-newman-demo-test-report.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "newman": "^5.1.2",
+    "newman-reporter-htmlextra": "^1.23.0"
+  }
+}
